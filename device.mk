@@ -32,6 +32,9 @@ PRODUCT_PACKAGES += \
 # Miuicamera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/products/miuicamera.mk)
 
+# Inherit from ViPER4AndroidFX
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
